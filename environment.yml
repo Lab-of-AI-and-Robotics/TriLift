@@ -1,0 +1,17 @@
+name: trilift
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - numpy
+  - pytorch=2.0.0
+  - torchvision=0.15.0
+  - cudatoolkit=11.8
+  - pytorch3d
+  - pip:
+    - setuptools==59.5.0
+    - wheel
+    - setuptools-scm

@@ -1,0 +1,26 @@
+# ML & utility
+imageio
+wandb
+configargparse
+matplotlib
+tqdm
+pandas
+scikit-learn
+seaborn
+easydict
+retrying
+thop
+protobuf==3.20.3
+kagglehub
+gdown
+h5py
+scipy
+
+# Logging & Visualization
+tensorboardX
+
+# Geometry & point cloud
+open3d
+plyfile
+
+numpy
