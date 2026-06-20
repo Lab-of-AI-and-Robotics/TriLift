@@ -120,13 +120,9 @@ python vis.py --train-dir processed_data/scannet/train --test-dir processed_data
 
 ### Data (NeRF-RPN)
 Download the `*_rpn_data.zip` files for each dataset from the
-[NeRF-RPN dataset](https://huggingface.co/datasets/lyclyc52/NeRF_RPN/tree/main) on HuggingFace.
-**Note:** these archives are double-zipped — unzip twice to reach the data:
-```bash
-unzip front3d_rpn_data.zip        # -> front3d_rpn_data.zip
-unzip front3d_rpn_data.zip        # -> front3d_rpn_data/ (features/, obb/, *_split.npz)
-```
-Place them under `Object_Detection/data/`:
+[NeRF-RPN dataset](https://huggingface.co/datasets/lyclyc52/NeRF_RPN/tree/main) on HuggingFace,
+then extract each archive (some are nested, so keep unzipping until you see the `*_rpn_data/`
+folder containing `features/`, `obb/`, and `*_split.npz`). Place them under `Object_Detection/data/`:
 ```
 data/
 ├── front3d/   front3d_rpn_data/   (features/, obb/, aabb/, 3dfront_split.npz)
